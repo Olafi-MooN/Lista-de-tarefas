@@ -18,11 +18,24 @@ function criarElemento() {
         elemento.id = id;
         elemento.innerHTML = valor;
         var deletar = document.createElement('button');
-        deletar.innerHTML = 'Delete';
+        deletar.innerHTML = 'apagar';
         deletar.className = 'delete';
         deletar.id = id;
         lista.appendChild(elemento);
         elemento.appendChild(deletar)
+
+        elemento.oncontextmenu = function(e) {
+            e.preventDefault();
+        }
+
+        elemento.onauxclick = function (e){
+            e.preventDefault();
+            deletar.style.display = 'flex';
+        }
+
+        // elemento.onmouseout = function (){
+        //     deletar.style.display = 'none';
+        // }
     })
 }
 
