@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    background-color:  white;
+    border: 1px solid rgba(0, 0, 255, 0.404);
+    margin: auto;
+}
+
+.container h1{
+    width: 100%;
+    height: 50px;
+    margin-block-start: initial;
+    text-indent: 10px;
+    margin: auto 0;
+    background-color: rgba(221, 221, 221, 0.774);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.container .tarefas {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container .tarefas input[type="text"]{
+    width: 80%;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 100%;
+}
+
+.container .lista .nomes .delete,
+.container .tarefas input[type="button"]{
+    width: 15%;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 100%;
+    background-color: rgba(41, 41, 224, 0.918);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.container .tarefas input + input{
+    margin-left: 5px;
+}
+
+.container .lista {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .lista .nomes{
+    width: 100%;
+    height: 30px;
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border: 1px solid rgba(41, 41, 224, 0.274);
+    font-size: 14pt;
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    justify-content: space-between;
+}
+
+.container .lista .nomes .delete{
+    width: 10%;
+    height: 20px;
+    padding-left: 5px;
+    font-size: 100%;
+    background-color: rgba(149, 18, 18, 0.918);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
