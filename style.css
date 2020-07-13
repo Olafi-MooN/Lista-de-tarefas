@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@
     background-color:  white;
     border: 1px solid rgba(0, 0, 255, 0.404);
     margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container h1{
@@ -52,6 +55,10 @@
     border: none;
     cursor: pointer;
     outline: none;
+}
+
+.container .tarefas input[type="button"]:hover{
+    background-color: rgb(29, 29, 245);
 }
 
 .container .tarefas input + input{
@@ -100,4 +107,30 @@
 
 .container .lista .nomes .delete:hover{
     background-color: rgb(255, 0, 0);
+}
+
+#winner{
+    animation-name: sorte;
+    animation-duration: 2s;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+.sorteio {
+    flex-direction: column;
+}
+
+.sorteio p {
+    margin-top: 40px;
+    font-size: 10px;
+}
+
+@keyframes sorte{
+    from {
+        width: 30%;
+    } to {
+        
+        width: 80%;
+    }
 }

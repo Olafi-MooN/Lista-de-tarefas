@@ -5,23 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Lista de Tarefas</h1>
+        <h1>Lista de Revendedoras</h1>
         <div class="tarefas">
             <input type="text" name="texto" placeholder="Digite a tarefa">
-            <input type="button" value="cadastrar">
+            <input type="button" value="Cadastrar">
+            <input type="button" value="Limpar" id='clear'>
+            <input type="button" value="Ocultar" id='hidden'>
         </div>
         <div class="lista">
             
         </div>
+
+        <h1>Sortear Nomes</h1>
+        <div class="tarefas sorteio">
+            <input id="sorte" type="button" value="sortear">
+            <input id="winner" type="text" placeholder="Ganhadora">
+            <p> <strong>OBS:</strong> O grande vencedor sera destacado com uma borda verde</p>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
