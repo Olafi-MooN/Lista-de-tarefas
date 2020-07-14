@@ -34,7 +34,7 @@ function mostrar() {
             deletar.style.display = 'none';
         }
 
-        elemento.onmouseclick = function () {
+        elemento.onclick = function () {
             deletar.style.display = 'flex';
         }
     })
