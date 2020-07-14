@@ -31,11 +31,11 @@ function mostrar() {
 
         elemento.onauxclick = function (e) {
             e.preventDefault();
-            deletar.style.display = 'flex';
+            deletar.style.display = 'none';
         }
 
         elemento.onmouseclick = function () {
-            deletar.style.display = 'none';
+            deletar.style.display = 'flex';
         }
     })
 }
